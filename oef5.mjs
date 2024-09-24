@@ -6,8 +6,7 @@ const userInput = readline.createInterface({input, output});
 
 let geboortejaar = await userInput.question('Wat is je geboortejaar? ');
 
-let toekomstjaar = 2031 - geboortejaar
-;
+let toekomstjaar = await userInput.question('Wat is je toekomstejaar? ');
 
-console.log( "In 2031 zal je " + toekomstjaar + " hebben" );
+console.log( "In " + toekomstjaar + " zal ik " +( toekomstjaar - geboortejaar) + " of "  + ( toekomstjaar - geboortejaar + 1) + " hebben")
 process.exit();
